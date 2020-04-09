@@ -22,7 +22,7 @@ export class ProfileService {
   }
 
   getprofileRepos(){
-    return this.http.get("https://api.github.com/users/mercy-shii" + "?client_id=" + this.clientid + "&client_secret=" + this.clientsecret);
+    return this.http.get("https://api.github.com/users/mercy-shii" + "/repos?client_id=" + this.clientid + "&client_secret=" + this.clientsecret);
   
   }
 }
