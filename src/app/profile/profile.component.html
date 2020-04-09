@@ -1,3 +1,9 @@
+<form action="">
+    <div class="form-group">
+        <input type="text" class="form-contol" placeholder="search git users with username"[(
+            ngModel )]="username" name="username"-(keyup)="findProfile()"> 
+    </div>
+</form>
 <div *ngIf="profile">
     <div class="panel panel-default">
         <div class="panel-heading">
@@ -31,6 +37,7 @@
                             <div class="panel-body" *ngFor="let repo of repos">
                                 <p>
                                     {{repo.name}} <a href="{{repo.html_url}}" class="btn btn-sm btn-warning">View this project on github</a>
+                                    {{repo.descr}}
                                 </p>
                             </div>
                         </div>
