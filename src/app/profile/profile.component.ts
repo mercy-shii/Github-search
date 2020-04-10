@@ -17,9 +17,9 @@ export class ProfileComponent implements OnInit {
 
   }
 
-  findProfile(){
+  findProfile(user){
     //this.profileservice.updateProfile(this.username);
-    this.profileservice.getProfileInfo().subscribe(profile => {
+    this.profileservice.getProfileInfo(user).subscribe(profile => {
       console.log(profile);
       this.myprofile = profile;
     });
@@ -32,7 +32,7 @@ export class ProfileComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.findProfile()
+    this.findProfile("mercy-shii")
   }
 
 }

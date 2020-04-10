@@ -18,8 +18,8 @@ export class ProfileService {
     this.username = 'mercy-shii'
   }
 
-  getProfileInfo():any{
-    return this.http.get("https://api.github.com/users/mercy-shii")
+  getProfileInfo(user):any{
+    return this.http.get("https://api.github.com/users/" +  user)
    }
 
 

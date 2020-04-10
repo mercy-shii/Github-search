@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,Output,EventEmitter} from '@angular/core';
 import { profile } from '../profile'
 import { ProfileComponent } from '../profile/profile.component';
 
@@ -12,8 +12,15 @@ import { ProfileComponent } from '../profile/profile.component';
 })
 export class SearchComponent implements OnInit {
 
-  myprofile:profile= new profile("",0,0,0,"")
-  
+  searchtext:string
+
+  @Output()
+  _profile:EventEmitter<string> = new EventEmitter<string>()
+  search(){
+    this._profile.emit(this.searchtext)
+    this.searchtext=""
+  }
+
 
   constructor() { }
 
