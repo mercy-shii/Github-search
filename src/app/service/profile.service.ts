@@ -19,7 +19,7 @@ export class ProfileService {
   }
 
   getProfileInfo():any{
-    return this.http.get("https://api.github.com/users/hamisicodes")
+    return this.http.get("https://api.github.com/users/mercy-shii")
    }
 
 

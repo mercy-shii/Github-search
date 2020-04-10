@@ -1,10 +1,6 @@
-<div class="topnav">
-    <a class="active" href="#Github-search">Home</a>
-    <div class="search-container">
-      <form action="/action_page.php">
-        <input type="text" placeholder="Search.." name="search">
-        <button type="submit"><i class="fa fa-search"></i></button>
-      </form>
-    </div>
-  </div>
-  
+<form class="Github-search">
+    <input type="text" class="form-control" placeholder="search" aria-label="search" name="search" [(ngModel)]="myprofile.login">
+     <br>
+    <button class="btn btn-primary" type="submit">search</button>
+
+</form>
