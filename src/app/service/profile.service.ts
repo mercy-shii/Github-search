@@ -7,6 +7,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ProfileService {
+  [x: string]: any;
 
   private username: 'string';
   private clientid = '60660187';
@@ -27,6 +28,5 @@ export class ProfileService {
   }
 
   updateProfile(username:string){
-    this.username = username;
-  }
+    this.newusername =username  }
 }
