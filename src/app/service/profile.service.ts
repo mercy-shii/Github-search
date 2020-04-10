@@ -23,8 +23,8 @@ export class ProfileService {
    }
 
 
-  getprofileRepos(repos){
-    return this.http.get("https://api.github.com/users/mercy-shii" + repos);
+  getprofileRepos(){
+    return this.http.get("https://api.github.com/users/mercy-shii" );
   
   }
 
