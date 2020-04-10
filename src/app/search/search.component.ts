@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { profile } from '../profile'
+import { ProfileComponent } from '../profile/profile.component';
 
 
-import { from } from 'rxjs';
+
 
 @Component({
   selector: 'app-search',
@@ -11,7 +12,8 @@ import { from } from 'rxjs';
 })
 export class SearchComponent implements OnInit {
 
-  myprofile:profile;
+  myprofile:profile= new profile("",0,0,0,"")
+  
 
   constructor() { }
 
