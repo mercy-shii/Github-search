@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { profile } from '../profile'
 
+
 import { from } from 'rxjs';
 
 @Component({
