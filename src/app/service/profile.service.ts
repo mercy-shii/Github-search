@@ -10,7 +10,7 @@ export class ProfileService {
   
 
   private username: string;
-  private clientid = '60660187';
+  
   private clientsecret ='dac068760c34b41ba8348d630f772fe10947f8c7';
 
   constructor(private http:HttpClient) { 
@@ -23,10 +23,6 @@ export class ProfileService {
    }
 
 
-  getprofileRepos(){
-    return this.http.get("https://api.github.com/users/mercy-shii" );
-  
-  }
 
   updateProfile(username:string){
     this.username =username  }
