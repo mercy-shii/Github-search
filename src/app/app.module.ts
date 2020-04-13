@@ -9,15 +9,16 @@ import { ProfileService} from './service/profile.service'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
-import { from } from 'rxjs';
 import { SearchComponent } from './search/search.component';
+import { HighlightDirective } from './highlight .directive';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
-    SearchComponent
+    SearchComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
